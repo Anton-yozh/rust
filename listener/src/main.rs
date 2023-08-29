@@ -6,8 +6,8 @@ use std::env;
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    let provider_web_socket = check_env("PROVIDER_WSS", "wss://mainnet.infura.io/ws/v3/c60b0bb42f8a4c6481ecd229eddaca27".to_string());
-    let redis_url = check_env("REDIS_URL", "redis://127.0.0.1/".to_string());
+    let provider_web_socket = env::var("PROVIDER_WSS").unwrap_or("wss://mainnet.infura.io/ws/v3/c60b0bb42f8a4c6481ecd229eddaca27".to_string());
+    let redis_url = env::var("REDIS_URL").unwrap_or("redis://127.0.0.1/".to_string());
 
     let provider = Provider::<Ws>::connect(provider_web_socket).await?;
     let redis_client = Client::open(redis_url)?;
@@ -36,14 +36,4 @@ async fn main() -> Result<()> {
         redis_conn.xtrim(&stream_name, redis::streams::StreamMaxlen::Equals(1))?;
     }
     Ok(())
-}
-
-fn check_env (key: &str, default_value: String)-> String{
-    match env::var(key) {
-        Ok(val) => val,
-        Err(e) => {
-            println!("Error: {}", e);
-            default_value
-        },
-    }
 }
