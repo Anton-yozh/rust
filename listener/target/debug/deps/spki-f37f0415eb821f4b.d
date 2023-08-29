@@ -1,0 +1,12 @@
+C:\Projects\Rust\listener\target\debug\deps\spki-f37f0415eb821f4b.rmeta: C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\lib.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\algorithm.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\error.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\spki.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\traits.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\../README.md
+
+C:\Projects\Rust\listener\target\debug\deps\libspki-f37f0415eb821f4b.rlib: C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\lib.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\algorithm.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\error.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\spki.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\traits.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\../README.md
+
+C:\Projects\Rust\listener\target\debug\deps\spki-f37f0415eb821f4b.d: C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\lib.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\algorithm.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\error.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\spki.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\traits.rs C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\../README.md
+
+C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\lib.rs:
+C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\algorithm.rs:
+C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\error.rs:
+C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\spki.rs:
+C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\traits.rs:
+C:\Users\ashtr\.cargo\registry\src\index.crates.io-6f17d22bba15001f\spki-0.7.2\src\../README.md:
