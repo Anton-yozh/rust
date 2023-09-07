@@ -18,10 +18,24 @@ async fn main() -> Result<()> {
     let (tx, mut rx): (mpsc::Sender<Block<H256>>, mpsc::Receiver<Block<H256>>) = mpsc::channel(32);
 
     let provider_task1 = tokio::spawn(async move {
-        let mut stream = provider.subscribe_blocks().await?;
+        let mut stream = match provider.subscribe_blocks().await {
+            Ok(s) => s,
+            Err(err) => {
+                eprintln!("Failed to subscribe to Ethereum blocks: {}", err);
+                return Err(err.into());
+            }
+        };
+
         while let Some(block) = stream.next().await {
-            tx.send(block).await?;
+            match tx.send(block).await {
+                Ok(_) => {}
+                Err(err) => {
+                    eprintln!("Failed to send Ethereum block to channel: {}", err);
+                    return Err(err.into());
+                }
+            }
         }
+
         Result::<()>::Ok(())
     });
 
