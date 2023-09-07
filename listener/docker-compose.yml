@@ -10,5 +10,5 @@ services:
     depends_on:
       - redis
     environment:
-      - REDIS_HOST=redis://redis
+      - REDIS_URL=redis://redis
 

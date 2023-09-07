@@ -10,7 +10,7 @@ use tokio::sync::mpsc;
 #[tokio::main]
 async fn main() -> Result<()> {
     let provider_web_socket = env::var("PROVIDER_WSS").unwrap_or("wss://mainnet.infura.io/ws/v3/c60b0bb42f8a4c6481ecd229eddaca27".to_string());
-    let redis_host = env::var("REDIS_HOST").unwrap_or("redis://127.0.0.1".to_string());
+    let redis_host = env::var("REDIS_URL").unwrap_or("redis://127.0.0.1".to_string());
 
     let provider = Provider::<Ws>::connect(provider_web_socket).await?;
     let redis_client = Client::open(redis_host)?;
